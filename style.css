@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ body{
+    font-family: 'Montserrat', sans-serif;
+ }
+
+header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-image:linear-gradient(#5e5e5f,rgb(12, 12, 12));
+    margin-bottom: 0px;
+    font-family:'Montserrat', sans-serif;
+}
+.imgLogo{
+    width: 110px;
+    height: 105px;
+    opacity: 0.5;
+    border-radius: 3px 9px;
+    margin: 5px;
+}
+.navHeader{
+    display: flex;
+    justify-content:end;
+}
+
+/*Fin Header*/
+/*Inicio Main*/
+main{
+    width: 100%;
+    height: 1000px;
+    background-color:black;
+}
+.presentacion{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: blanchedalmond;
+    /*font-style: italic;*/
+}
+.primerasCards{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(8, 8, 8);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgb(255, 255, 255);
+}
+h1{
+    color: #B97A95;
+    align-items: center;
+    font-size: 60px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    /*text-shadow:rgb(248, 212, 252) 2px 2px ;*/
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 20px 10px;
+}
+.container .card{
+    max-width: 300px;
+    height: 420px;
+    height: 215px;
+    /*background: #716F81;*/
+    background-image: linear-gradient(#B97A95,#716F81);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover {
+    height: 420px;
+}
+.container .card .imgBx .pics{
+    position: relative;
+    background: #fff;
+    top: -60px;
+    /*left: 20px;*/
+    min-width: initial;
+    width: 260px;
+    height: 190px;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0.2);
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(rgb(0, 0, 0),#5e5e5f/*#B97A95,#716F81*/);
+    margin-bottom: 0px;
+}
+.footerRedes{
+    display: flex;
+    justify-content: right;
+    font-weight:lighter;
+}
+.p-footer{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.logoRedes{
+    width: 50px;
+    height: 50px;
+}
+.facebook:before,
+.twitter:before,
+.instagram:before{
+    background: #fff;
+    background: linear-gradient(
+        45deg,
+        rgba(255,255,255,.7) 0%,
+        rgba(255,255,255,.3) 49%,
+        rgba(255,255,255,.5) 50%);
+}
+.social-media-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /*margin-top: 300px;*/
+}
+.social-media-link {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    position: relative;
+    transition: tranform 0.5s ease-in-out;
+    margin: 0 20px;
+}
+.social-media-link > i {
+    z-index: 1;
+}
+.social-media-link:before {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    background-size: 300%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+.social-media-link:hover,
+.social-media-link:active,
+.social-media-link:focus {
+    transform: translateY(-16px);
+    padding-bottom: 32px;
+}
+.social-media-link:hover:before,
+.social-media-link:active:before,
+.social-media-link:focus:before{
+    background-position: top right;
+}
+.social-media-link + .social-media-link {
+    margin-left: 4px;
+}
+
